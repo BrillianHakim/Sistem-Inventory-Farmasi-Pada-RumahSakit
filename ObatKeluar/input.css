@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 60%; /* Increase the width */
+    max-width: 800px; /* Set a maximum width */
+    min-width: 400px; /* Set a minimum width */
+    background-color: #333;
+    padding: 15px 5%; /* Use percentage for horizontal padding */
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    
+}
+
+.form-group label {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+.form-group input[type="date"] {
+    padding: 8px;
+}
+.form-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    gap: 10px; /* Add space between buttons */
+    margin-top: 20px;
+}
+.btn-batal, .btn-tambah {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block; /* Ensure consistent display */
+}
+
+.btn-batal {
+    background-color: #f44336;
+}
+
+.btn-tambah {
+    background-color: #4CAF50;
+}
+
+.btn-batal:hover {
+    background-color: #d32f2f;
+}
+
+.btn-tambah:hover {
+    background-color: #388e3c;
+}

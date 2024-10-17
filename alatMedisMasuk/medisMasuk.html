@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alat Medis Masuk</title>
+    <link rel="stylesheet" href="medisMasuk.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo Sistem Inventory Farmasi" />
+        <h1>Sistem Inventory Farmasi</h1>
+      </div>
+      <div class="user-info">
+        <img src="../img/user-solid.svg" alt="User Image" />
+        <span>Admin Hakim</span>
+      </div>
+    </header>
+    <div class="wrapper">
+      <nav class="sidebar">
+        <ul>
+          <li>
+            <a href="../beranda.html"><img src="../img/home.svg" alt="" /> Beranda</a>
+          </li>
+          <li>
+            <a href="../ObatMasuk/obatMasuk.html"><img src="../img/panah.svg" alt="" /> Obat Masuk</a>
+          </li>
+          <li>
+            <a href="../ObatKeluar/obatkeluar.html"><img src="../img/Obat Masuk.svg" alt="" /> Obat Keluar</a>
+          </li>
+          <li>
+            <a href="../alatMedisMasuk/MedisMasuk.html"><img src="../img/medis keluar.svg" alt="" /> Alat Medis Masuk</a>
+          </li>
+          <li>
+            <a href="../alatMedisKeluar/MedisKeluar.html"><img src="../img/medis masuk.svg" alt="" /> Alat Medis Keluar</a>
+          </li>
+          <li>
+            <a  class="active" href="../laporan/laporan.html"><img src="../img/report.svg" alt="" /> Laporan</a>
+          </li>
+          <li>
+            <a href="../index.html"><img src="../img/close.svg" alt="" /> Keluar</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-content">
+        <div class="table-header">
+            <a href="input.html" class="add-data-btn">Tambah Data</a>
+        </div>
+        <table class="table-obat">
+          <thead>
+            <tr>
+              <th>Nama Alat Medis</th>
+              <th>Kode Alat Medis</th>
+              <th>Jumlah Masuk</th>
+              <th>Tanggal Masuk</th>
+              <th>Produksi</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tensimeter Digital</td>
+              <td>TD001</td>
+              <td>50</td>
+              <td>2024-09-20</td>
+              <td>PT ABC Medical</td>
+              <td>
+                <a href="#" class="edit-link">Edit</a>
+                <a href="#" class="delete-link">Hapus</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Infus Set</td>
+              <td>IS006</td>
+              <td>30</td>
+              <td>2024-09-18</td>
+              <td>PT MNO Medical</td>
+              <td>
+                <a href="#" class="edit-link">Edit</a>
+                <a href="#" class="delete-link">Hapus</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Gunting Bedah</td>
+              <td>GB009</td>
+              <td>20</td>
+              <td>2024-09-19</td>
+              <td>PT BCH Medical</td>
+              <td>
+                <a href="#" class="edit-link">Edit</a>
+                <a href="#" class="delete-link">Hapus</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

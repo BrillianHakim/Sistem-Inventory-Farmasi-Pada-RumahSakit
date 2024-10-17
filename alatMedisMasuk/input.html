@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Alat Medis Masuk</title>
+    <link rel="stylesheet" href="input.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Input Alat Medis Masuk</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nama-obat">Nama Alat Medis</label>
+          <input type="text" id="nama-obat" name="nama-obat" required />
+        </div>
+        <div class="form-group">
+          <label for="kode-obat">Kode Alat Medis</label>
+          <input type="text" id="kode-obat" name="kode-obat" required />
+        </div>
+        <div class="form-group">
+          <label for="jumlah-obat">Jumlah Masuk</label>
+          <input type="number" id="jumlah-obat" name="jumlah-obat" required />
+        </div>
+        <div class="form-group">
+          <label for="tanggal-masuk">Tanggal masuk</label>
+          <input type="date" id="tanggal-masuk" name="tanggal-masuk" required />
+        </div>
+        <div class="form-group">
+          <label for="produksi">Produksi</label>
+          <input type="text" id="produksi" name="produksi" required />
+        </div>
+        <div class="form-buttons">
+          <a href="medisMasuk.html" class="btn-batal">Batal</a>
+          <a onclick="konfirmasi()" href="medisMasuk.html" class="btn-tambah">Tambah Data</a>
+        </div>
+      </form>
+    </div>
+    <script src="alern2.js"></script>
+  </body>
+</html>
