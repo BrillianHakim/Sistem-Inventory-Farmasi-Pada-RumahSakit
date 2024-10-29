@@ -13,8 +13,10 @@
         <h1>Sistem Inventory Farmasi</h1>
       </div>
       <div class="user-info">
-        <img src="../img/user-solid.svg" alt="User Image" />
-        <span>Admin Hakim</span>
+        <a href="../admin.html">
+          <img src="../img/user-solid.svg" alt="User Image" />
+          <span>Admin Hakim</span>
+        </a>
       </div>
     </header>
     <div class="wrapper">
@@ -23,17 +25,22 @@
           <li>
             <a href="../beranda.html"><img src="../img/home.svg" alt="" /> Beranda</a>
           </li>
-          <li>
-            <a href="../ObatMasuk/obatMasuk.html"><img src="../img/panah.svg" alt="" /> Obat Masuk</a>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"><img src="../img/panah.svg" alt="" />Obat</a>
+            <div class="dropdown-content">
+              <a href="../ObatMasuk/obatMasuk.html">Obat Masuk</a>
+              <a href="../ObatKeluar/obatKeluar.html">Obat Keluar</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"><img src="../img/panah.svg" alt="" />Alat Medis</a>
+            <div class="dropdown-content">
+              <a href="../alatMedisMasuk/medisMasuk.html">Alat Medis Masuk</a>
+              <a href="../alatMedisKeluar/medisKeluar.html">Alat Medis Keluar</a>
+            </div>
           </li>
           <li>
-            <a href="../ObatKeluar/obatkeluar.html"><img src="../img/Obat Masuk.svg" alt="" /> Obat Keluar</a>
-          </li>
-          <li>
-            <a href="../alatMedisMasuk/MedisMasuk.html"><img src="../img/medis keluar.svg" alt="" /> Alat Medis Masuk</a>
-          </li>
-          <li>
-            <a href="../alatMedisKeluar/MedisKeluar.html"><img src="../img/medis masuk.svg" alt="" /> Alat Medis Keluar</a>
+            <a class="active" href="../dataSuplier/suplier.html"><img src="../img/suplier.svg" alt="" />  Data Suplier</a>
           </li>
           <li>
             <a href="../laporan/laporan.html"><img src="../img/report.svg" alt="" /> Laporan</a>
@@ -45,7 +52,11 @@
       </nav>
       <div class="main-content">
         <div class="table-header">
-          <a href="input.html" class="add-data-btn">Tambah Data</a>
+          <h1>Obat Keluar</h1>
+          <div>
+            <a href="#" class="add-data-btn-lpr">Cetak</a>
+            <a href="input.html" class="add-data-btn">Tambah Data</a>
+          </div>
         </div>
         <table class="table-obat">
           <thead>
@@ -54,10 +65,14 @@
               <th>Kode Obat</th>
               <th>Jumlah Obat Keluar</th>
               <th>Satuan</th>
-
               <th>Produksi</th>
               <th>Tanggal Keluar</th>
-              <th>Edit</th>
+              <th>Jam Keluar</th>
+              <th>Tujuan Penggunaan</th>
+              <th>Nama Penerima</th>
+              <th>Keterangan</th>
+              <th>Gambar</th>
+              <th>Aksi</th>
             </tr>
           </thead>
           <tbody>
@@ -66,12 +81,18 @@
               <td>PAR500</td>
               <td>50</td>
               <td>Tablet</td>
-
               <td>PT Kimia Farma</td>
-              <td>2024-09-20</td>
+              <td>20-09-2024</td>
+              <td>13.11</td>
+              <td>Ruang Operasi</td> <!-- Tujuan Penggunaan -->
+              <td>Dr. Amanda</td> <!-- Nama Penerima -->
+              <td>Digunakan untuk pasien operasi</td> <!-- Keterangan -->
+              <td class="image-cell">
+                <img src="../img/logo.png" alt="Paracetamol" class="product-image">
+              </td>
               <td>
                 <a href="#" class="edit-link">Edit</a>
-                <a href="#" class="delete-link">Hapus</a>
+                <a href="#" class="view-link">Lihat</a>
               </td>
             </tr>
             <tr>
@@ -79,12 +100,18 @@
               <td>AMX500</td>
               <td>30</td>
               <td>Kapsul</td>
-
               <td>PT Kalbe Farma</td>
-              <td>2024-09-18</td>
+              <td>18-09-2024</td>
+              <td>14.45</td>
+              <td>Poliklinik</td> <!-- Tujuan Penggunaan -->
+              <td>Dr. Budi</td> <!-- Nama Penerima -->
+              <td>Untuk infeksi saluran pernapasan</td> <!-- Keterangan -->
+              <td class="image-cell">
+                <img src="../img/logo.png" alt="Amoxicillin" class="product-image">
+              </td>
               <td>
                 <a href="#" class="edit-link">Edit</a>
-                <a href="#" class="delete-link">Hapus</a>
+                <a href="#" class="view-link">Lihat</a>
               </td>
             </tr>
             <tr>
@@ -92,18 +119,26 @@
               <td>IBU400</td>
               <td>20</td>
               <td>Tablet</td>
-
               <td>PT Dexa Medika</td>
-              <td>2024-09-19</td>
+              <td>19-09-2024</td>
+              <td>09.30</td>
+              <td>Unit Gawat Darurat</td> <!-- Tujuan Penggunaan -->
+              <td>Suster Maria</td> <!-- Nama Penerima -->
+              <td>Digunakan untuk meredakan nyeri</td> <!-- Keterangan -->
+              <td class="image-cell">
+                <img src="../img/logo.png" alt="Ibuprofen" class="product-image">
+              </td>
               <td>
                 <a href="#" class="edit-link">Edit</a>
-                <a href="#" class="delete-link">Hapus</a>
+                <a href="#" class="view-link">Lihat</a>
               </td>
             </tr>
             <!-- Tambahkan data lainnya -->
           </tbody>
+          
         </table>
       </div>
     </div>
+    <script src="alern1.js"></script>
   </body>
 </html>

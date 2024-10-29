@@ -33,32 +33,6 @@
     align-items: center; /* Centers items vertically */
 }
 
-.add-data-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-}
-.add-data-btn-lpr {
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-right: 10px;
-}
-.add-data-btn:hover {
-    background-color: #45a049;
-}
-.add-data-btn-lpr:hover {
-    background-color: #f44336;
-
-}
 .edit-link, .view-link {
     padding: 5px 10px;
     text-decoration: none;
@@ -72,6 +46,34 @@
   .view-link {
     background-color: #FEEC37;
   }
+.add-data-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.add-data-btn:hover {
+    background-color: #45a049;
+}
+
+.add-data-btn-lpr {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.add-data-btn-lpr:hover {
+    background-color: #f44336;
+}
 /* Dashboard */
 /* Reset margin and padding */
 * {
@@ -180,8 +182,9 @@ header .user-info img {
     text-decoration: none;
 }
 
-/* Dropdown styles */
-.dropdown {
+
+   /* Dropdown styles */
+   .dropdown {
     position: relative;
   
   }
@@ -208,9 +211,8 @@ header .user-info img {
   .show {
     display: block;
   }
-
-   /* Untuk menampilkan gambar obat  */
-   .table-obat .product-image {
+  /* Untuk menampilkan gambar obat  */
+  .table-obat .product-image {
     width: 80px;
     height: 80px;
     object-fit: cover;
@@ -226,7 +228,8 @@ header .user-info img {
     width: 100px;
     text-align: center;
   }
-   /* info admin */
+
+ /* info admin */
  .user-info a {
     text-decoration: none;
     color: inherit;

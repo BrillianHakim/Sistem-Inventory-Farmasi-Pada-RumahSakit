@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistem Inventory Farmasi</title>
-    <link rel="stylesheet" href="beranda.css" />
+    <link rel="stylesheet" href="admin.css" />
   </head>
   <body>
     <header>
@@ -13,10 +13,8 @@
         <h1>Sistem Inventory Farmasi</h1>
       </div>
       <div class="user-info">
-        <a href="../admin.html">
-          <img src="../img/user-solid.svg" alt="User Image" />
-          <span>Admin Hakim</span>
-        </a>
+        <img src="img/user-solid.svg" alt="User Image" />
+        <span>User Hakim</span>
       </div>
     </header>
     <div class="wrapper">
@@ -29,18 +27,15 @@
             <a href="#" class="dropbtn"><img src="img/panah.svg" alt="" />Obat</a>
             <div class="dropdown-content">
               <a href="ObatMasuk/obatMasuk.html">Obat Masuk</a>
-              <a href="../ObatKeluar/obatKeluar.html">Obat Keluar</a>
+              <a href="ObatKeluar/obatKeluar.html">Obat Keluar</a>
             </div>
           </li>
           <li class="dropdown">
             <a href="#" class="dropbtn"><img src="../img/panah.svg" alt="" />Alat Medis</a>
             <div class="dropdown-content">
-              <a href="../alatMedisMasuk/medisMasuk.html">Alat Medis Masuk</a>
-              <a href="../alatMedisKeluar/medisKeluar.html">Alat Medis Keluar</a>
+              <a href="alatMedisMasuk/medisMasuk.html">Alat Medis Masuk</a>
+              <a href="alatMedisKeluar/medisKeluar.html">Alat Medis Keluar</a>
             </div>
-          </li>
-          <li>
-            <a class="active" href="dataSuplier/suplier.html"><img src="img/suplier.svg" alt="" /> Data Suplier</a>
           </li>
           <li>
             <a href="laporan/laporan.html"><img src="img/report.svg" alt="" /> Laporan</a>
@@ -50,25 +45,21 @@
           </li>
         </ul>
       </nav>
-      <div class="main-content">
-        <!-- Konten utama di sini -->
-        <div class="dashboard">
-          <!-- Contoh konten dashboard -->
-          <div class="dashboard-item-1">
-            <h3>361</h3>
-            <p>Obat Masuk</p>
+      <div class="profile-container">
+        <div class="profile-header">
+          <h2>Profil User</h2>
+          
+        </div>
+        <div class="profile-content">
+          <div class="profile-avatar">
+            <img src="img/admin.png" alt="Foto Profil"> 
           </div>
-          <div class="dashboard-item-2">
-            <h3>70</h3>
-            <p>Obat Keluar</p>
-          </div>
-          <div class="dashboard-item-3">
-            <h3>24</h3>
-            <p>Alat Medis Masuk</p>
-          </div>
-          <div class="dashboard-item-4">
-            <h3>10</h3>
-            <p>Alat Medis Keluar</p>
+          <div class="profile-details">
+            <p><strong>Nama:</strong>Bintang Brillian Hakim</p>
+            <p><strong>Username:</strong> AdminGanteng123#</p>
+            <p><strong>Email:</strong> bintangbrillianhakim@gmail.com</p>
+            <p><strong>Telepon:</strong> 0881036919116</p>
+            <p><strong>Hak Akses:</strong> Admin Gudang</p>
           </div>
         </div>
       </div>

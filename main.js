@@ -1,15 +1,3 @@
-function konfirmasi(){
-    alert("Yakin ingin menambah data?");
-}
-function lihat1(){
-  alert("Tensimeter digital adalah alat medis yang digunakan untuk mengukur tekanan darah secara elektronik. Alat ini bekerja dengan mendeteksi aliran darah di arteri menggunakan sensor dan menampilkan hasil pengukuran dalam bentuk angka digital pada layar LCD.")
-}
-function lihat2(){
-  alert("Infus set adalah perangkat medis yang digunakan untuk mengalirkan cairan infus ke dalam tubuh pasien melalui intravena (pembuluh darah).")
-}
-function lihat3(){
-  alert("Gunting bedah adalah alat medis yang dirancang khusus untuk digunakan dalam prosedur pembedahan. Alat ini terbuat dari baja tahan karat berkualitas tinggi yang tahan terhadap korosi dan dapat disterilkan.")
-}
  // JavaScript untuk dropdown
  document.addEventListener('DOMContentLoaded', function() {
     var dropdowns = document.getElementsByClassName("dropdown");

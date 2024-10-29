@@ -13,8 +13,10 @@
         <h1>Sistem Inventory Farmasi</h1>
       </div>
       <div class="user-info">
-        <img src="../img/user-solid.svg" alt="User Image" />
-        <span>Admin Hakim</span>
+        <a href="../admin.html">
+          <img src="../img/user-solid.svg" alt="User Image" />
+          <span>Admin Hakim</span>
+        </a>
       </div>
     </header>
     <div class="wrapper">
@@ -23,17 +25,22 @@
           <li>
             <a href="../beranda.html"><img src="../img/home.svg" alt="" /> Beranda</a>
           </li>
-          <li>
-            <a href="../ObatMasuk/obatMasuk.html"><img src="../img/panah.svg" alt="" /> Obat Masuk</a>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"><img src="../img/panah.svg" alt="" />Obat</a>
+            <div class="dropdown-content">
+              <a href="../ObatMasuk/obatMasuk.html">Obat Masuk</a>
+              <a href="../ObatKeluar/obatKeluar.html">Obat Keluar</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"><img src="../img/panah.svg" alt="" />Alat Medis</a>
+            <div class="dropdown-content">
+              <a href="../alatMedisMasuk/medisMasuk.html">Alat Medis Masuk</a>
+              <a href="../alatMedisKeluar/medisKeluar.html">Alat Medis Keluar</a>
+            </div>
           </li>
           <li>
-            <a href="../ObatKeluar/obatkeluar.html"><img src="../img/Obat Masuk.svg" alt="" /> Obat Keluar</a>
-          </li>
-          <li>
-            <a href="../alatMedisMasuk/MedisMasuk.html"><img src="../img/medis keluar.svg" alt="" /> Alat Medis Masuk</a>
-          </li>
-          <li>
-            <a href="../alatMedisKeluar/MedisKeluar.html"><img src="../img/medis masuk.svg" alt="" /> Alat Medis Keluar</a>
+            <a class="active" href="../dataSuplier/suplier.html"><img src="../img/suplier.svg" alt="" />  Data Suplier</a>
           </li>
           <li>
             <a class="active" href="../laporan/laporan.html"><img src="../img/report.svg" alt="" /> Laporan</a>
@@ -45,8 +52,12 @@
       </nav>
       <div class="main-content">
         <div class="table-header">
-          <a href="#" class="add-data-btn-lpr">Laporan</a>
+          <h1>Obat Masuk</h1>
+          <div>
+            <a href="#" class="add-data-btn-lpr">Cetak</a>
           <a href="input.html" class="add-data-btn">Tambah Data</a>
+          </div>
+          
           
         </div>
         <table class="table-obat">
@@ -57,9 +68,13 @@
               <th>Jumlah Obat Masuk</th>
               <th>Satuan</th>
               <th>Tanggal Masuk</th>
+              <th>Jam Masuk</th>
               <th>Produksi</th>
+              <th>Supplier</th>
               <th>Tanggal Kadaluwarsa</th>
-              <th>Edit</th>
+              <th>Gambar</th>
+              <th>Keterangan</th>
+              <th>Aksi</th>
             </tr>
           </thead>
           <tbody>
@@ -68,12 +83,18 @@
               <td>PAR500</td>
               <td>200</td>
               <td>Tablet</td>
-              <td>2024-09-20</td>
+              <td>20-09-2024</td>
+              <td>11.01</td>
               <td>PT Kimia Farma</td>
-              <td>2025-09-20</td>
-              <td>
+              <td>PT. Sumber Sehat Farma</td>
+              <td>20-09-2024</td>
+              <td class="image-cell">
+                <img src="../img/logo.png" alt="Paracetamol" class="product-image">
+              </td>
+              <td>Disimpan di suhu ruang, hindari paparan sinar matahari langsung.</td>
+              <td >
                 <a href="#" class="edit-link">Edit</a>
-                <a href="#" class="delete-link">Hapus</a>
+                <a onclick="lihat1()" href="#" class="view-link">Lihat</a>
               </td>
             </tr>
             <tr>
@@ -81,12 +102,18 @@
               <td>AMX500</td>
               <td>150</td>
               <td>Kapsul</td>
-              <td>2024-09-18</td>
+              <td>18-09-2024</td>
+              <td>14.30</td>
               <td>PT Kalbe Farma</td>
-              <td>2026-01-15</td>
+              <td>PT. Anugrah Medika</td>
+              <td>15-09-2026</td>
+              <td class="image-cell">
+                <img src="../img/logo.png" alt="Paracetamol" class="product-image">
+              </td>
+              <td>Perlu disimpan di tempat yang sejuk, tidak boleh terkena kelembaban tinggi</td>
               <td>
                 <a href="#" class="edit-link">Edit</a>
-                <a href="#" class="delete-link">Hapus</a>
+                <a onclick="lihat2()" href="#" class="view-link">Lihat</a>
               </td>
             </tr>
             <tr>
@@ -94,18 +121,66 @@
               <td>IBU400</td>
               <td>300</td>
               <td>Tablet</td>
-              <td>2024-09-19</td>
+              <td>19-09-2024</td>
+              <td>15.44</td>
               <td>PT Dexa Medika</td>
-              <td>2025-06-10</td>
+              <td>PT. Farma Sejahtera</td>
+              <td>10-06-2025</td>
+              <td class="image-cell">
+                <img src="../img/logo.png" alt="Paracetamol" class="product-image">
+              </td>
+              <td>Obat ini harus disimpan di bawah 25°C, hindari penyimpanan di tempat lembab.</td>
               <td>
                 <a href="#" class="edit-link">Edit</a>
-                <a href="#" class="delete-link">Hapus</a>
+                <a onclick="lihat3()" href="#" class="view-link">Lihat</a>
               </td>
             </tr>
             <!-- Tambahkan data lainnya -->
+            <tr>
+              <td>Amoxicillin</td>
+              <td>AMX500</td>
+              <td>250</td>
+              <td>Kapsul</td>
+              <td>25-09-2024</td>
+              <td>09.55</td>
+              <td>PT Kimia Farma</td>
+              <td>PT. Medika Utama</td>
+              <td>15-07-2025</td>
+              <td class="image-cell">
+                <img src="../img/logo.png" alt="Amoxicillin" class="product-image">
+              </td>
+              <td>Pengiriman kedua, pengecekan fisik sudah dilakukan dan layak digunakan</td>
+              <td>
+                <a href="#" class="edit-link">Edit</a>
+                <a onclick="lihat4()" href="#" class="view-link">Lihat</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Paracetamol</td>
+              <td>PCT500</td>
+              <td>400</td>
+              <td>Tablet</td>
+              <td>22-09-2024</td>
+              <td>13.03</td>
+              <td>PT Kalbe Farma</td>
+              <td>PT. Sehat Bersama</td>
+              <td>12-06-2025</td>
+              <td class="image-cell">
+                <img src="../img/logo.png" alt="Paracetamol" class="product-image">
+              </td>
+              <td>Disimpan di suhu ruang, hindari paparan sinar matahari langsung.</td>
+              <td>
+                <a href="#" class="edit-link">Edit</a>
+                <a onclick="lihat5()" href="#" class="view-link">Lihat</a>
+              </td>
+            </tr>
+           
           </tbody>
         </table>
+        
+      </div>
       </div>
     </div>
+    <script src="obatmasuk.js"></script>
   </body>
 </html>
