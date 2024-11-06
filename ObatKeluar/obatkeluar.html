@@ -53,9 +53,19 @@
       <div class="main-content">
         <div class="table-header">
           <h1>Obat Keluar</h1>
-          <div>
-            <a href="#" class="add-data-btn-lpr">Cetak</a>
-            <a href="input.html" class="add-data-btn">Tambah Data</a>
+          <div class="search-print-add">
+            <!-- Tambah container untuk search box -->
+            <div class="search-container">
+              <button type="button" class="search-button">Cari</button>
+              <input type="search" id="searchInput" placeholder="Cari obat..." class="search-box">
+              
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <div class="button-container">
+              <a href="#" class="add-data-btn-lpr">Cetak</a>
+              <a href="input.html" class="add-data-btn">Tambah Data</a>
+            </div>
           </div>
         </div>
         <table class="table-obat">
@@ -137,6 +147,17 @@
           </tbody>
           
         </table>
+        <div class="pagination">
+          <a href="#" class="page-link">First</a>
+          <a href="#" class="page-link">&laquo;</a>
+          <a href="#" class="page-link active">1</a>
+          <a href="#" class="page-link">2</a>
+          <a href="#" class="page-link">3</a>
+          <a href="#" class="page-link">4</a>
+          <a href="#" class="page-link">5</a>
+          <a href="#" class="page-link">&raquo;</a>
+          <a href="#" class="page-link">Last</a>
+        </div>
       </div>
     </div>
     <script src="alern1.js"></script>
