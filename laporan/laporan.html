@@ -12,6 +12,11 @@
         <img src="../img/logo.png" alt="Logo Sistem Inventory Farmasi" />
         <h1>Sistem Inventory Farmasi</h1>
       </div>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
       <div class="user-info">
         <img src="../img/user-solid.svg" alt="User Image" />
         <span>Admin Hakim</span>
@@ -23,20 +28,25 @@
           <li>
             <a href="../beranda.html"><img src="../img/home.svg" alt="" /> Beranda</a>
           </li>
-          <li>
-            <a href="../ObatMasuk/obatMasuk.html"><img src="../img/panah.svg" alt="" /> Obat Masuk</a>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"><img src="../img/panah.svg" alt="" />Obat</a>
+            <div class="dropdown-content">
+              <a href="../ObatMasuk/obatMasuk.html">Obat Masuk</a>
+              <a href="../ObatKeluar/obatKeluar.html">Obat Keluar</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"><img src="../img/panah.svg" alt="" />Alat Medis</a>
+            <div class="dropdown-content">
+              <a href="../alatMedisMasuk/medisMasuk.html">Alat Medis Masuk</a>
+              <a href="../alatMedisKeluar/medisKeluar.html">Alat Medis Keluar</a>
+            </div>
           </li>
           <li>
-            <a href="../ObatKeluar/obatkeluar.html"><img src="../img/Obat Masuk.svg" alt="" /> Obat Keluar</a>
+            <a class="active" href="../dataSuplier/suplier.html"><img src="../img/suplier.svg" alt="" /> Data Suplier</a>
           </li>
           <li>
-            <a href="../alatMedisMasuk/MedisMasuk.html"><img src="../img/medis keluar.svg" alt="" /> Alat Medis Masuk</a>
-          </li>
-          <li>
-            <a href="../alatMedisKeluar/MedisKeluar.html"><img src="../img/medis masuk.svg" alt="" /> Alat Medis Keluar</a>
-          </li>
-          <li>
-            <a class="active" href="../laporan/laporan.html"><img src="../img/report.svg" alt="" /> Laporan</a>
+            <a href="../laporan/laporan.html"><img src="../img/report.svg" alt="" /> Laporan</a>
           </li>
           <li>
             <a href="../index.html"><img src="../img/close.svg" alt="" /> Keluar</a>
@@ -239,5 +249,6 @@
         </div>
       </div>
     </div>
+    <script src="laporan.js"></script>
   </body>
 </html>

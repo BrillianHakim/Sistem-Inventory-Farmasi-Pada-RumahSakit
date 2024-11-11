@@ -403,3 +403,77 @@ header .user-info img {
   color: white;
   border: 1px solid #4CAF50;
 }
+/* Hamburger styling */
+.hamburger {
+  display: flex; /* Ubah dari 'none' ke 'flex' agar selalu tampil */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+  margin-right: auto; /* Menambahkan margin right auto untuk posisi */
+  margin-left: 20px; /* Memberi jarak dari logo */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 2px 0;
+  transition: 0.4s;
+}
+
+/* Header styling - perlu dimodifikasi untuk mengakomodasi hamburger */
+header {
+  display: flex;
+  justify-content: flex-start; /* Ubah ke flex-start agar item mulai dari kiri */
+  align-items: center;
+  background-color: #a6d7a3;
+  padding: 10px 20px;
+}
+
+/* Sidebar transition */
+.sidebar {
+  width: 200px;
+  background-color: #3b3b3b;
+  height: 100vh;
+  padding-top: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar.collapsed {
+  width: 100px;
+}
+
+/* Mengatur tampilan menu saat sidebar collapsed */
+.sidebar.collapsed ul li a {
+  justify-content: center;
+  padding: 10px 5px;
+}
+
+.sidebar.collapsed ul li a img {
+  margin-right: 0;
+}
+
+.sidebar.collapsed ul li a span,
+.sidebar.collapsed .dropdown-content,
+.sidebar.collapsed ul li a:not(img) {
+  display: none;
+}
+
+/* Animasi hamburger saat aktif */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Menyembunyikan teks menu saat collapsed */
+.sidebar.collapsed .dropbtn span {
+  display: none;
+}
