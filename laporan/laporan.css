@@ -271,6 +271,7 @@ header {
 .sidebar.collapsed .dropbtn span {
   display: none;
 }
+
 /* Dropdown styles */
 .dropdown {
   position: relative;

@@ -33,13 +33,24 @@
     align-items: center; /* Centers items vertically */
 }
 
-.edit-link, .view-link {
-    padding: 5px 10px;
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
-    margin-right: 5px;
-  }
+.edit-link{
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  margin-right: 5px;
+  display: flex;
+}
+.view-link {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  margin-right: 5px;
+  display: flex;
+  margin-top:10px;
+}
+
   .edit-link {
     background-color: #4CAF50;
   }

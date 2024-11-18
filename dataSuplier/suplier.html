@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Obat Masuk</title>
+    <title>Data Supplier</title>
     <link rel="stylesheet" href="suplier.css" />
   </head>
   <body>
@@ -57,74 +57,80 @@
       </nav>
       <div class="main-content">
         <div class="table-header">
-          <h1>Data Suplier</h1>
+          <h1>Data Supplier</h1>
           <div class="search-print-add">
-            <!-- Tambah container untuk search box -->
             <div class="search-container">
               <button type="button" class="search-button">Cari</button>
-              <input type="search" id="searchInput" placeholder="Cari supplier..." class="search-box">
-              
-                <i class="fas fa-search"></i>
-              </button>
+              <input type="search" id="searchInput" placeholder="Cari supplier..." class="search-box" />
             </div>
             <div class="button-container">
               <a href="#" class="add-data-btn-lpr">Cetak</a>
               <a href="input.html" class="add-data-btn">Tambah Data</a>
             </div>
           </div>
-          
-          
         </div>
         <table class="table-obat">
           <thead>
             <tr>
+              <th>ID Supplier</th>
               <th>Nama Supplier</th>
               <th>Alamat</th>
               <th>Kota</th>
               <th>No. Telepon</th>
+              <th>Email</th>
+              <th>Jenis Produk</th>
               <th>Contact Person</th>
-              <th>Status</th>
-              <th>Aksi</th> 
+              <th>Catatan Tambahan</th>
+              <th>Aksi</th>
             </tr>
           </thead>
           <tbody>
             <tr>
+              <td>SUP001</td>
               <td>PT Sehat Sejahtera</td>
               <td>Jl. Raya Merdeka No. 123</td>
               <td>Jakarta</td>
               <td>(021) 12345678</td>
+              <td>sehatsejahtera@gmail.com</td>
+              <td>Obat</td>
               <td>Bapak Budi</td>
-              <td>Aktif</td>
+              <td>Memiliki diskon khusus</td>
               <td>
                 <a href="#" class="edit-link">Edit</a>
                 <a href="#" class="view-link">Lihat</a>
               </td>
             </tr>
             <tr>
+              <td>SUP002</td>
               <td>PT Farma Jaya</td>
               <td>Jl. Pahlawan No. 45</td>
               <td>Bandung</td>
               <td>(022) 98765432</td>
+              <td>farmajaya@gmail.com</td>
+              <td>Alat Medis</td>
               <td>Ibu Ani</td>
-              <td>Aktif</td>
+              <td>Menunda pengiriman bulan lalu</td>
               <td>
                 <a href="#" class="edit-link">Edit</a>
                 <a href="#" class="view-link">Lihat</a>
               </td>
             </tr>
             <tr>
+              <td>SUP003</td>
               <td>PT Obat Hebat</td>
               <td>Jl. Sudirman No. 10</td>
               <td>Surabaya</td>
               <td>(031) 55544433</td>
+              <td>obathebat@gmail.com</td>
+              <td>Obat & Alat Medis</td>
               <td>Bapak Chandra</td>
-              <td>Nonaktif</td>
+              <td>Pelayanan sangat responsif</td>
               <td>
                 <a href="#" class="edit-link">Edit</a>
                 <a href="#" class="view-link">Lihat</a>
               </td>
             </tr>
-            </tbody>
+          </tbody>
         </table>
         <div class="pagination">
           <a href="#" class="page-link">First</a>
@@ -132,12 +138,9 @@
           <a href="#" class="page-link active">1</a>
           <a href="#" class="page-link">2</a>
           <a href="#" class="page-link">3</a>
-          <a href="#" class="page-link">4</a>
-          <a href="#" class="page-link">5</a>
           <a href="#" class="page-link">&raquo;</a>
           <a href="#" class="page-link">Last</a>
         </div>
-      </div>
       </div>
     </div>
     <script src="jawasekerip.js"></script>
